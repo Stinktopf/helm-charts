@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nodejs-hello-world:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-12T14:30:14.5694553+01:00"
+    description: Say hello to NodeJS!
+    digest: fe1df8640f0623effe8d9c43e1ff5eb80be89d7f2bb14be332d79939368f2c31
+    name: nodejs-hello-world
+    type: application
+    urls:
+    - nodejs-hello-world-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-11-12T14:30:14.5689338+01:00"
