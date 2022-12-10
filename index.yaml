@@ -3,7 +3,7 @@ entries:
   cassandra:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-12-10T16:21:02.7488316+01:00"
+    created: "2022-12-10T16:30:11.8220967+01:00"
     dependencies:
     - name: k8ssandra-operator
       repository: https://helm.k8ssandra.io/stable
@@ -14,7 +14,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: '>=42.2.1'
     description: A Helm chart for deploying k8ssandra-v2-operator with monitoring
-    digest: 5266af03fee97dd61e4315f71060dd66e153dd0a3ec91e27eb143d7723db9b8c
+    digest: 79b5d6632d8c32645d33b2e016c1596def8e433d2acfdede40f192ec11df2cd7
     name: cassandra
     type: application
     urls:
@@ -23,7 +23,7 @@ entries:
   nodejs-hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-10T16:21:02.7518558+01:00"
+    created: "2022-12-10T16:30:11.8240986+01:00"
     description: Say hello to NodeJS!
     digest: fe1df8640f0623effe8d9c43e1ff5eb80be89d7f2bb14be332d79939368f2c31
     name: nodejs-hello-world
@@ -31,4 +31,4 @@ entries:
     urls:
     - nodejs-hello-world-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-10T16:21:02.7159859+01:00"
+generated: "2022-12-10T16:30:11.7923079+01:00"
