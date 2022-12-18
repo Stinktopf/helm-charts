@@ -3,7 +3,7 @@ entries:
   cassandra:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-12-10T16:30:11.8220967+01:00"
+    created: "2022-12-18T11:28:32.6971101+01:00"
     dependencies:
     - name: k8ssandra-operator
       repository: https://helm.k8ssandra.io/stable
@@ -14,7 +14,7 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: '>=42.2.1'
     description: A Helm chart for deploying k8ssandra-v2-operator with monitoring
-    digest: 79b5d6632d8c32645d33b2e016c1596def8e433d2acfdede40f192ec11df2cd7
+    digest: a2315f1052b5a2d1b88c51df3e3dbb8b77d7596691eff087ec6ec74b9a6a8cee
     name: cassandra
     type: application
     urls:
@@ -23,7 +23,7 @@ entries:
   nodejs-hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-10T16:30:11.8240986+01:00"
+    created: "2022-12-18T11:28:32.7011143+01:00"
     description: Say hello to NodeJS!
     digest: fe1df8640f0623effe8d9c43e1ff5eb80be89d7f2bb14be332d79939368f2c31
     name: nodejs-hello-world
@@ -31,4 +31,27 @@ entries:
     urls:
     - nodejs-hello-world-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-10T16:30:11.7923079+01:00"
+  scylla:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-12-18T11:28:32.7247166+01:00"
+    dependencies:
+    - name: scylla-operator
+      repository: https://scylla-operator-charts.storage.googleapis.com/stable
+      version: '>=1.7.4'
+    - name: scylla
+      repository: https://scylla-operator-charts.storage.googleapis.com/stable
+      version: '>=1.7.4'
+    - alias: prometheus
+      condition: .Values.prometheus.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: '>=42.2.1'
+    description: A Helm chart for deploying k8ssandra-v2-operator with monitoring
+    digest: 13a096fa831310a9133532be04751acbb3ba5488b2284e99a1ab87f06612498f
+    name: scylla
+    type: application
+    urls:
+    - scylla-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-12-18T11:28:32.6661263+01:00"
