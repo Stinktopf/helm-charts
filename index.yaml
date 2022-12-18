@@ -3,18 +3,18 @@ entries:
   cassandra:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-12-18T12:56:16.7175541+01:00"
+    created: "2022-12-18T13:14:32.0854169+01:00"
     dependencies:
     - name: k8ssandra-operator
       repository: https://helm.k8ssandra.io/stable
       version: '>=0.39.0'
     - alias: prometheus
-      condition: .Values.prometheus.enabled
+      condition: prometheus.enabled
       name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
       version: '>=42.2.1'
     description: A Helm chart for deploying k8ssandra-v2-operator with monitoring
-    digest: a2315f1052b5a2d1b88c51df3e3dbb8b77d7596691eff087ec6ec74b9a6a8cee
+    digest: 9d6e58c18dd153fa033af88c36ce4166d28ccdeba2e51dc38aad5e92757dc5c0
     name: cassandra
     type: application
     urls:
@@ -23,7 +23,7 @@ entries:
   nodejs-hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-18T12:56:16.7185564+01:00"
+    created: "2022-12-18T13:14:32.0859311+01:00"
     description: Say hello to NodeJS!
     digest: fe1df8640f0623effe8d9c43e1ff5eb80be89d7f2bb14be332d79939368f2c31
     name: nodejs-hello-world
@@ -34,7 +34,7 @@ entries:
   scylla:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-12-18T12:56:16.740614+01:00"
+    created: "2022-12-18T13:14:32.1066049+01:00"
     dependencies:
     - name: scylla-operator
       repository: https://scylla-operator-charts.storage.googleapis.com/stable
@@ -54,4 +54,4 @@ entries:
     urls:
     - scylla-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-18T12:56:16.6851143+01:00"
+generated: "2022-12-18T13:14:32.0536246+01:00"
