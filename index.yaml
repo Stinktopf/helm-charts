@@ -3,7 +3,7 @@ entries:
   cassandra:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-12-24T00:14:14.1031523+01:00"
+    created: "2022-12-24T00:25:10.4678983+01:00"
     dependencies:
     - name: k8ssandra-operator
       repository: https://helm.k8ssandra.io/stable
@@ -23,7 +23,7 @@ entries:
   nodejs-hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-12-24T00:14:14.1031523+01:00"
+    created: "2022-12-24T00:25:10.4684271+01:00"
     description: Say hello to NodeJS!
     digest: fe1df8640f0623effe8d9c43e1ff5eb80be89d7f2bb14be332d79939368f2c31
     name: nodejs-hello-world
@@ -34,7 +34,7 @@ entries:
   scylla:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-12-24T00:14:14.13129+01:00"
+    created: "2022-12-24T00:25:10.4942465+01:00"
     dependencies:
     - alias: certmanager
       condition: cert-manager.enabled
@@ -53,10 +53,10 @@ entries:
       repository: https://prometheus-community.github.io/helm-charts
       version: '>=42.2.1'
     description: A Helm chart for deploying scylla with monitoring
-    digest: b379914440cc1c776d36bfd870a0449e9f8f294442158f2d8cd470df9494b0c5
+    digest: f6c9ab44dd72c9de21d79456b6b888be7ce41f529ac5e14268fbc6abfb945073
     name: scylla
     type: application
     urls:
     - scylla-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-24T00:14:14.070094+01:00"
+generated: "2022-12-24T00:25:10.4359649+01:00"
