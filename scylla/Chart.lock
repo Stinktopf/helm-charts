@@ -1,0 +1,15 @@
+dependencies:
+- name: cert-manager
+  repository: https://charts.jetstack.io
+  version: v1.10.1
+- name: scylla-operator
+  repository: https://scylla-operator-charts.storage.googleapis.com/stable
+  version: v1.7.4
+- name: scylla
+  repository: https://scylla-operator-charts.storage.googleapis.com/stable
+  version: v1.7.4
+- name: kube-prometheus-stack
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 43.1.1
+digest: sha256:4fd430073393d094a5e9e40ccd64e1822db69a774547f5a3a28c03932c049809
+generated: "2022-12-18T13:39:09.4020305+01:00"

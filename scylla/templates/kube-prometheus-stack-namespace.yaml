@@ -1,0 +1,11 @@
+# Learn more: https://developer.hashicorp.com/nomad/tutorials/templates/go-template-syntax
+{{ if .Values.prometheus.enabled }}
+{{ if ne (len .Values.prometheus.namespaceOverride) 0 }}
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{.Values.prometheus.namespaceOverride }}
+  labels:
+    name: {{.Values.prometheus.namespaceOverride }}
+{{ end }}
+{{ end }}

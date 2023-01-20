@@ -1,0 +1,78 @@
+{{ if .Values.prometheus.grafana.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: alternator.4.3
+  namespace: {{ .Release.Namespace }}
+  labels:
+    grafana_dashboard: "1"
+data:
+  alternator.4.3.json: |-
+   {{- $.Files.Get "dashboards/alternator.4.3.json"  | nindent 6 -}}
+{{ end }}
+---
+{{ if .Values.prometheus.grafana.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scylla-advanced.4.3
+  namespace: {{ .Release.Namespace }}
+  labels:
+    grafana_dashboard: "1"
+data:
+  scylla-advanced.4.3.json: |-
+   {{- $.Files.Get "dashboards/scylla-advanced.4.3.json"  | nindent 6 -}}
+{{ end }}
+---
+{{ if .Values.prometheus.grafana.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scylla-cql.4.3
+  namespace: {{ .Release.Namespace }}
+  labels:
+    grafana_dashboard: "1"
+data:
+  scylla-cql.4.3.json: |-
+   {{- $.Files.Get "dashboards/scylla-cql.4.3.json"  | nindent 6 -}}
+{{ end }}
+---
+{{ if .Values.prometheus.grafana.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scylla-detailed.4.3
+  namespace: {{ .Release.Namespace }}
+  labels:
+    grafana_dashboard: "1"
+data:
+  scylla-detailed.4.3.json: |-
+   {{- $.Files.Get "dashboards/scylla-detailed.4.3.json"  | nindent 6 -}}
+{{ end }}
+---
+{{ if .Values.prometheus.grafana.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scylla-os.4.3
+  namespace: {{ .Release.Namespace }}
+  labels:
+    grafana_dashboard: "1"
+data:
+  scylla-os.4.3.json: |-
+   {{- $.Files.Get "dashboards/scylla-os.4.3.json"  | nindent 6 -}}
+{{ end }}
+---
+{{ if .Values.prometheus.grafana.enabled }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scylla-overview.4.3
+  namespace: {{ .Release.Namespace }}
+  labels:
+    grafana_dashboard: "1"
+data:
+  scylla-overview.4.3.json: |-
+   {{- $.Files.Get "dashboards/scylla-overview.4.3.json"  | nindent 6 -}}
+{{ end }}
+---
