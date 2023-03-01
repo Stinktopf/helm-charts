@@ -6,6 +6,7 @@ scylla:
   datacenter: "us-east-1"
   racks:
   - name: "us-east-1a"
+    scyllaConfig: scylla-config
     members: 3
     storage:
       capacity: 10Gi
