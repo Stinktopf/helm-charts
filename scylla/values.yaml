@@ -19,6 +19,9 @@ scylla:
         memory: 3Gi
   serviceMonitor:
     create: true
+scylla-operator:
+  webhook:
+    createSelfSignedCertificate: true
 prometheus:
   enabled: true
   prometheus:
