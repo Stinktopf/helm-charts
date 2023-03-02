@@ -23,7 +23,7 @@
 {{ end }}
 
 {{/* Erstellt eine Liste der angegebenen Namespaces */}}
-{{- $allNamespaces := list .Values.certmanager.namespace "scylla-operator"}}
+{{- $allNamespaces := list "scylla-operator"}}
 
 {{/* Erstellt eine neue Liste, die nur die Elemente enthaelt, die noch nicht in der neuen Liste vorhanden sind */}}
 {{- $uniqueNamespaces := list }}
