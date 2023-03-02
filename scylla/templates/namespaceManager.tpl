@@ -23,7 +23,7 @@
 {{ end }}
 
 {{/* Erstellt eine Liste der angegebenen Namespaces */}}
-{{- $allNamespaces := list "scylla-operator"}}
+{{- $allNamespaces := list "scylla-operator" "scylla-manager"}}
 
 {{/* Erstellt eine neue Liste, die nur die Elemente enthaelt, die noch nicht in der neuen Liste vorhanden sind */}}
 {{- $uniqueNamespaces := list }}
