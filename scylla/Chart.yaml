@@ -20,6 +20,9 @@ dependencies:
   - name: scylla
     version: ">=1.7.4"
     repository: "https://scylla-operator-charts.storage.googleapis.com/stable"
+  - name: scylla-manager
+    version: ">=1.7.4"
+    repository: "https://scylla-operator-charts.storage.googleapis.com/stable"
   - name: kube-prometheus-stack
     version: ">=42.2.1"
     repository: https://prometheus-community.github.io/helm-charts
