@@ -1,0 +1,23 @@
+{{/* Erstellt eine Liste der angegebenen Namespaces */}}
+{{- $allNamespaces := list "scylla-operator" "scylla-manager"}}
+
+{{/* Erstellt eine neue Liste, die nur die Elemente enthaelt, die noch nicht in der neuen Liste vorhanden sind */}}
+{{- $uniqueNamespaces := list }}
+{{- range $index, $value := $allNamespaces }}
+  {{- $dict := dict "list" $uniqueNamespaces "value" $value}}
+  {{- $contains := include "contains" $dict }}
+ 
+  {{- if eq $contains "false" }}
+    {{- $uniqueNamespaces = append $uniqueNamespaces $value }}
+  {{- end }}
+{{- end }}
+
+
+{{/* Iteriert über die Liste ohne Duplikate und legt Namespaces an */}}
+{{- range $index, $value := $uniqueNamespaces }}
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ $value }}
+---  
+{{- end }}
