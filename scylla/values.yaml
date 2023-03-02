@@ -1,7 +1,3 @@
-certmanager:
-  enabled: true
-  namespace: "cert-manager"
-  replicaCount: 1
 scylla:
   datacenter: "us-east-1"
   racks:

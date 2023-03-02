@@ -4,4 +4,4 @@ metadata:
   name: scylla-config
 data:
   scylla.yaml: |
-    authenticator: AllowAllAuthenticator
+    authenticator: PasswordAuthenticator
